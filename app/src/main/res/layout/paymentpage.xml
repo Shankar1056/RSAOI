@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/app_back_color"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimary"
+		app:navigationIcon="@drawable/back"
+		app:titleTextColor="@color/white">
+
+		<TextView
+			android:id="@+id/toolbartext"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_large_20"
+			android:textStyle="bold"/>
+	</android.support.v7.widget.Toolbar>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_below="@+id/toolbar">
+
+		<android.support.v7.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout
+
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="25dp"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight=".5"
+					android:gravity="center_vertical"
+					android:text="@string/party"
+					android:textColor="@color/black"
+					android:textSize="15sp"
+					android:textStyle="bold"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight=".5"
+					android:gravity="right|center"
+					android:text="@string/pay"
+					android:textColor="@color/black"
+					android:textSize="15sp"
+					android:textStyle="bold"/>
+			</LinearLayout>
+
+
+		</android.support.v7.widget.CardView>
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:paddingBottom="50dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<android.support.v7.widget.CardView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="3dp"
+					android:background="@color/white"
+					android:visibility="visible">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical"
+							android:layout_marginRight="15dp"
+							android:layout_marginLeft="15dp">
+						<LinearLayout
+							android:id="@+id/opening_balance_layout"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/height_50"
+							android:layout_marginLeft="@dimen/margin_15"
+							android:layout_marginRight="@dimen/margin_15"
+							android:gravity="center"
+							android:orientation="horizontal">
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/opening_balance"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".3"
+								android:gravity="center_vertical"
+								android:text="@string/openingbalance"
+								android:textColor="@color/black"
+								android:maxLines="1"
+								android:textSize="@dimen/text_large_normal"/>
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/opening_balance_amount"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".6"
+								android:gravity="center|right"
+								android:text=""
+								android:textColor="@color/black"
+								android:textSize="@dimen/text_normal"/>
+						</LinearLayout>
+
+						<View
+							android:layout_width="match_parent"
+							android:layout_height="0.3dp"
+							android:background="#BABABA"/>
+
+						<LinearLayout
+							android:id="@+id/cover_charges_layout"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/height_50"
+							android:layout_marginLeft="@dimen/margin_15"
+							android:layout_marginRight="@dimen/margin_15"
+							android:gravity="center"
+							android:orientation="horizontal">
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/cover_charges"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".3"
+								android:gravity="center_vertical"
+								android:text="@string/covercharge"
+								android:textColor="@color/black"
+								android:textSize="@dimen/text_large_normal"/>
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/cover_charges_amount"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".6"
+								android:gravity="center|right"
+								android:text=""
+								android:textColor="@color/black"
+								android:textSize="@dimen/text_normal"/>
+						</LinearLayout>
+							<View
+								android:layout_width="match_parent"
+								android:layout_height="0.3dp"
+								android:background="#BABABA"/>
+						<LinearLayout
+							android:id="@+id/enhanced_subscription_layout"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/height_50"
+							android:layout_marginLeft="@dimen/margin_15"
+							android:layout_marginRight="@dimen/margin_15"
+							android:gravity="center"
+							android:orientation="horizontal">
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/enhanced_subscription"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".3"
+								android:gravity="center_vertical"
+								android:text="@string/enhancesubscription"
+								android:textColor="@color/black"
+								android:maxLines="1"
+								android:textSize="@dimen/text_large_normal"/>
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/enhanced_subscription_amount"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".6"
+								android:gravity="center|right"
+								android:text=""
+								android:textColor="@color/black"
+								android:textSize="@dimen/text_large_normal"/>
+						</LinearLayout>
+							<View
+								android:layout_width="match_parent"
+								android:layout_height="0.3dp"
+								android:background="#BABABA"/>
+						<LinearLayout
+							android:id="@+id/excess_paid_amount_layout"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/height_50"
+							android:layout_marginLeft="@dimen/margin_15"
+							android:layout_marginRight="@dimen/margin_15"
+							android:gravity="center"
+							android:orientation="horizontal">
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/excess_paid"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".3"
+								android:gravity="center_vertical"
+								android:text="@string/openingbalance"
+								android:textColor="@color/black"
+								android:maxLines="1"
+								android:textSize="@dimen/text_large_normal"/>
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/excess_paid_amount"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".6"
+								android:gravity="center|right"
+								android:text=""
+								android:textColor="@color/black"
+								android:textSize="@dimen/text_large_normal"/>
+						</LinearLayout>
+							<View
+								android:layout_width="match_parent"
+								android:layout_height="0.3dp"
+								android:background="#BABABA"/>
+						<LinearLayout
+							android:id="@+id/others_layout"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/height_50"
+							android:layout_marginLeft="@dimen/margin_15"
+							android:layout_marginRight="@dimen/margin_15"
+							android:gravity="center"
+							android:orientation="horizontal">
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/others"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".3"
+								android:gravity="center_vertical"
+								android:text="@string/others"
+								android:textColor="@color/black"
+								android:maxLines="1"
+								android:textSize="@dimen/text_large_normal"/>
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/others_amount"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".6"
+								android:gravity="center|right"
+								android:text=""
+								android:textColor="@color/black"
+								android:textSize="@dimen/text_large_normal"/>
+						</LinearLayout>
+							<View
+								android:layout_width="match_parent"
+								android:layout_height="0.3dp"
+								android:background="#BABABA"/>
+						<LinearLayout
+							android:id="@+id/bank_layout"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/height_50"
+							android:layout_marginLeft="@dimen/margin_15"
+							android:layout_marginRight="@dimen/margin_15"
+							android:gravity="center"
+							android:orientation="horizontal">
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/bank"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".3"
+								android:gravity="center_vertical"
+								android:text="@string/bank"
+								android:textColor="@color/black"
+								android:maxLines="1"
+								android:textSize="@dimen/text_large_normal"/>
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/bank_amount"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".6"
+								android:gravity="center|right"
+								android:text=""
+								android:textColor="@color/black"
+								android:textSize="@dimen/text_large_normal"/>
+						</LinearLayout>
+							<View
+								android:layout_width="match_parent"
+								android:layout_height="0.3dp"
+								android:background="#BABABA"/>
+						<LinearLayout
+							android:id="@+id/misk_debits_layout"
+							android:layout_width="match_parent"
+							android:layout_height="@dimen/height_50"
+							android:layout_marginLeft="@dimen/margin_15"
+							android:layout_marginRight="@dimen/margin_15"
+							android:gravity="center"
+							android:orientation="horizontal">
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/misk_debits"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".3"
+								android:gravity="center_vertical"
+								android:text="@string/miskdebits"
+								android:textColor="@color/black"
+								android:maxLines="1"
+								android:textSize="@dimen/text_large_normal"/>
+
+							<bigappcompany.com.rsi.widgets.MyCustomTextView
+								android:id="@+id/misk_debits_amount"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight=".6"
+								android:gravity="center|right"
+								android:text=""
+								android:textColor="@color/black"
+								android:textSize="@dimen/text_large_normal"/>
+						</LinearLayout>
+					</LinearLayout>
+					</LinearLayout>
+				</android.support.v7.widget.CardView>
+
+
+				<android.support.v7.widget.CardView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:background="@color/white">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="25dp"
+						android:layout_marginRight="25dp"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/debit"
+							android:textColor="@color/colorPrimary"
+							android:textSize="@dimen/text_large_17"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="45dp"
+							android:layout_marginLeft="10dp"
+							android:layout_marginRight="10dp"
+							android:gravity="center"
+							android:orientation="horizontal">
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight=".5"
+								android:gravity="center_vertical"
+								android:text="@string/total"
+								android:textColor="@color/black"
+								android:textSize="@dimen/text_large"
+								android:textStyle="normal"/>
+
+							<TextView
+								android:id="@+id/totaldebit"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight=".5"
+								android:gravity="right|center"
+								android:textColor="@color/black"
+								android:textSize="@dimen/text_large"
+								android:textStyle="normal"/>
+						</LinearLayout>
+					</LinearLayout>
+				</android.support.v7.widget.CardView>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:background="@color/white">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="25dp"
+						android:layout_marginRight="25dp"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/credit"
+							android:textColor="@color/colorPrimary"
+							android:textSize="@dimen/text_large_17"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="45dp"
+							android:layout_marginLeft="10dp"
+							android:layout_marginRight="10dp"
+							android:gravity="center"
+							android:orientation="horizontal">
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight=".5"
+								android:gravity="center_vertical"
+								android:text="@string/total"
+								android:textColor="@color/black"
+								android:textSize="@dimen/text_large"
+								android:textStyle="normal"/>
+
+							<TextView
+								android:id="@+id/totalcredit"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight=".5"
+								android:gravity="right|center"
+								android:textColor="@color/black"
+								android:textSize="@dimen/text_large"
+								android:textStyle="normal"/>
+						</LinearLayout>
+					</LinearLayout>
+				</android.support.v7.widget.CardView>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_gravity="center"
+					android:layout_marginTop="10dp"
+					android:background="@color/white">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_marginLeft="25dp"
+						android:layout_marginRight="25dp"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_weight=".5"
+							android:gravity="center_vertical"
+							android:text="@string/payableamount"
+							android:textColor="@color/black"
+							android:textSize="@dimen/text_large_17"
+							android:textStyle="normal"/>
+
+						<TextView
+							android:id="@+id/totalpayable"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_weight=".5"
+							android:gravity="right|center"
+							android:textColor="@color/colorPrimary"
+							android:textSize="15sp"
+							android:textStyle="bold"/>
+					</LinearLayout>
+				</android.support.v7.widget.CardView>
+
+
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/totalpayableamount"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_alignParentBottom="true"
+		android:background="@color/colorAccent"
+		android:gravity="center"
+		android:text="@string/pay_caps"
+		android:textColor="@color/white"
+		android:textSize="15dp"/>
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="6dp"
+	android:background="@drawable/bg_notif_item"
+	android:orientation="vertical"
+	android:padding="16dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:id="@+id/iv_image"
+			android:layout_width="@dimen/notif_size"
+			android:layout_height="@dimen/notif_size"
+			android:contentDescription="@string/content_description"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tv_title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="16dp"
+				android:layout_marginStart="16dp"
+				android:paddingTop="2dp"
+				android:textColor="@color/apptext_blackcolor"
+				android:textStyle="bold"
+				tools:text="This is Title"/>
+
+			<TextView
+				android:id="@+id/tv_desc"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="16dp"
+				android:layout_marginStart="16dp"
+				android:layout_marginTop="8dp"
+				android:textSize="12sp"
+				tools:text="This is content"/>
+		</LinearLayout>
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="0.5dp"
+		android:layout_marginTop="16dp"
+		android:background="#d6d6d6"/>
+
+	<TextView
+		android:id="@+id/tv_date"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingTop="16dp"
+		android:textSize="10sp"
+		tools:text="This is content"/>
+</LinearLayout>

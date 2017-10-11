@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_facilities_sub_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bigappcompany.com.rsi.activity.FacilitiesSubList">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_recycle"
+        android:paddingBottom="65dp"
+        android:background="@color/bg"
+        >
+    </android.support.v7.widget.RecyclerView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:id="@+id/bottombar"
+        android:layout_gravity="bottom"
+        ></FrameLayout>
+</FrameLayout>

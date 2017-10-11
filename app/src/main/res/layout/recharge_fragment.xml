@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/margin_15"
+		android:layout_marginLeft="@dimen/margin_15"
+		android:layout_marginRight="@dimen/margin_15"
+		android:orientation="vertical">
+
+<ScrollView
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingBottom="@dimen/height_50"
+	android:scrollbars="none">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<android.support.design.widget.TextInputLayout
+					android:id="@+id/input_layout_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginTop="5dp">
+
+					<EditText
+						android:id="@+id/input_name"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:ellipsize="end"
+						android:hint="@string/hint_name"
+						android:paddingLeft="@dimen/margin_7"
+						android:paddingRight="@dimen/margin_7"
+						android:singleLine="true"
+						android:textSize="@dimen/text_normal"
+						android:textStyle="normal"/>
+
+				</android.support.design.widget.TextInputLayout>
+
+				<android.support.design.widget.TextInputLayout
+					android:id="@+id/input_layout_phone"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginTop="10dp">
+
+					<EditText
+						android:id="@+id/input_phone"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:ellipsize="end"
+						android:hint="@string/hint_phone"
+						android:paddingLeft="@dimen/margin_7"
+						android:paddingRight="@dimen/margin_7"
+						android:singleLine="true"
+						android:inputType="number"
+						android:textSize="@dimen/text_normal"
+						android:maxLength="10"
+						android:textStyle="normal"/>
+
+				</android.support.design.widget.TextInputLayout>
+
+				<android.support.design.widget.TextInputLayout
+					android:id="@+id/input_layout_email"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginTop="10dp">
+
+					<EditText
+						android:id="@+id/input_email"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:ellipsize="end"
+						android:hint="@string/hint_email"
+						android:paddingLeft="@dimen/margin_7"
+						android:paddingRight="@dimen/margin_7"
+						android:singleLine="true"
+						android:inputType="textEmailAddress"
+						android:textSize="@dimen/text_normal"
+						android:textStyle="normal"/>
+
+				</android.support.design.widget.TextInputLayout>
+
+				<android.support.design.widget.TextInputLayout
+					android:id="@+id/input_layout_amount"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginTop="10dp">
+
+					<EditText
+						android:id="@+id/input_amount"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:ellipsize="end"
+						android:hint="@string/hint_amount"
+						android:paddingLeft="@dimen/margin_7"
+						android:paddingRight="@dimen/margin_7"
+						android:singleLine="true"
+						android:textSize="@dimen/text_normal"
+						android:inputType="numberDecimal"
+						android:textStyle="normal"/>
+
+				</android.support.design.widget.TextInputLayout>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:layout_marginTop="10dp">
+
+			<EditText
+				android:id="@+id/input_member"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:hint="@string/hint_member"
+				android:paddingLeft="@dimen/margin_7"
+				android:paddingRight="@dimen/margin_7"
+				android:singleLine="true"
+				android:textSize="@dimen/text_normal"
+				android:textStyle="normal"/>
+
+		</android.support.design.widget.TextInputLayout>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:visibility="gone"
+			android:layout_marginTop="10dp">
+
+			<EditText
+				android:id="@+id/input_bill"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:hint="@string/hint_billnumber"
+				android:paddingLeft="@dimen/margin_7"
+				android:paddingRight="@dimen/margin_7"
+				android:singleLine="true"
+				android:textSize="@dimen/text_normal"
+				android:textStyle="normal"/>
+
+		</android.support.design.widget.TextInputLayout>
+
+				<android.support.design.widget.TextInputLayout
+					android:id="@+id/input_layout_desc"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_marginTop="10dp">
+
+					<EditText
+						android:id="@+id/input_desc"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:ellipsize="end"
+						android:hint="@string/hint_description"
+						android:paddingLeft="@dimen/margin_7"
+						android:paddingRight="@dimen/margin_7"
+						android:singleLine="true"
+						android:textSize="@dimen/text_normal"
+						android:textStyle="normal"/>
+
+				</android.support.design.widget.TextInputLayout>
+
+			</LinearLayout>
+</ScrollView>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height_60"
+		android:layout_alignParentBottom="true"
+		android:orientation="vertical"
+		android:background="@color/colorAccent">
+<TextView
+	android:id="@+id/chargetext"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:background="@color/white"
+	android:textColor="@color/red"
+	android:textStyle="normal"
+	android:text="Note: 1% payment gateway charge will be apply."/>
+		<TextView
+			android:id="@+id/paynow"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:text="@string/paynow"
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_large_17"
+			android:textStyle="normal"/>
+	</LinearLayout>
+</RelativeLayout>

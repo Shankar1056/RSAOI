@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/bg">
+
+	<TextView
+		android:id="@+id/maskTV"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/gradient"
+		android:clickable="true"
+		android:visibility="gone"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="56dp">
+
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/colorPrimary"
+				app:title="@string/home"
+				app:titleMarginStart="60dp"
+				app:titleTextColor="@color/white">
+
+			</android.support.v7.widget.Toolbar>
+
+			<ImageView
+				android:id="@+id/nav_IV"
+				android:layout_width="28dp"
+				android:layout_height="28dp"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="16dp"
+				android:src="@drawable/nav_icon"/>
+
+
+			<RelativeLayout
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical">
+
+				<TextView
+					android:id="@+id/feedback"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical|right"
+					android:layout_marginEnd="24dp"
+					android:layout_marginRight="24dp"
+					android:background="@drawable/feedback"
+					android:clickable="true"
+					android:layout_toLeftOf="@+id/iv_notification"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:textSize="@dimen/text_small"
+					android:visibility="visible"
+					android:layout_centerVertical="true"/>
+
+				<ImageView
+					android:id="@+id/iv_notification"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="end|center_vertical"
+					android:layout_marginEnd="29dp"
+					android:layout_marginRight="29dp"
+					android:src="@drawable/ic_stat_bell"
+					android:layout_alignTop="@+id/ticketTV"
+					android:layout_toLeftOf="@+id/ticketTV"
+					android:layout_toStartOf="@+id/ticketTV"/>
+
+				<TextView
+					android:id="@+id/cartcount"
+					android:layout_width="@dimen/margin_15"
+					android:layout_height="@dimen/margin_15"
+					android:background="@drawable/circulartext"
+					android:gravity="center"
+					android:text=""
+					android:visibility="gone"
+					android:textColor="@color/white"
+					android:textSize="@dimen/text_too_small"
+					android:textStyle="normal"
+					android:layout_gravity="end|center_vertical"
+					android:layout_alignTop="@+id/iv_notification"
+					android:layout_toLeftOf="@+id/ticketTV"
+					android:layout_toStartOf="@+id/ticketTV"
+					android:layout_marginRight="17dp"
+					android:layout_marginEnd="17dp"/>
+
+				<TextView
+					android:id="@+id/ticketTV"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical|right"
+					android:layout_marginEnd="18dp"
+					android:layout_marginRight="18dp"
+					android:background="@drawable/ic_booking_history_white_24dp"
+					android:clickable="true"
+					android:gravity="center"
+					android:textColor="#212121"
+					android:textSize="@dimen/text_small"
+					android:visibility="visible"
+					android:layout_centerVertical="true"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentEnd="true"/>
+			</RelativeLayout>
+		</FrameLayout>
+
+		<android.support.v7.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_marginBottom="10dp"
+			android:layout_marginLeft="0dp"
+			android:layout_marginRight="0dp"
+			android:layout_marginTop="0dp"
+			android:layout_weight="2"
+			app:cardBackgroundColor="@color/white"
+			app:cardCornerRadius="0dp"
+			app:cardElevation="5dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<FrameLayout
+					android:id="@+id/rootLayout"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_weight="1">
+
+					<ImageView
+						android:id="@+id/image_zoom"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+						android:background="#ffffff"
+						android:scaleType="fitCenter"
+						android:visibility="gone"/>
+
+
+					<android.support.v4.view.ViewPager
+						android:id="@+id/pager_zoom"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+						android:background="#ffffff"/>
+
+					<android.support.v7.widget.RecyclerView
+						android:id="@+id/dots"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal|bottom"
+						android:layout_margin="10dp">
+
+					</android.support.v7.widget.RecyclerView>
+
+
+				</FrameLayout>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="10dp"
+					android:layout_marginLeft="16dp"
+					android:layout_marginTop="10dp"
+					android:text="Photos"
+					android:textColor="@color/colorPrimary"/>
+			</LinearLayout>
+		</android.support.v7.widget.CardView>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/photos_RV"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_marginLeft="6dp"
+			android:layout_weight="2"
+			android:paddingBottom="5dp"></android.support.v7.widget.RecyclerView>
+	</LinearLayout>
+</FrameLayout>

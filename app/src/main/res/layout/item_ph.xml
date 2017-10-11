@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bigappcompany.com.rsi.widgets.SquareWFrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <bigappcompany.com.rsi.activity.RippleView
+	    android:id="@+id/rp_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:rv_centered="true"
+        app:rv_color="@color/rippleColor"
+        app:rv_alpha="1"
+        app:rv_rippleDuration="@integer/fast"
+        >
+
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/audioimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:background="@drawable/gradient"
+            />
+
+    </bigappcompany.com.rsi.activity.RippleView>
+
+</bigappcompany.com.rsi.widgets.SquareWFrameLayout>

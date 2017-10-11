@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#00796A</color>
+    <color name="colorPrimary">#009788</color>
+    <color name="colorAccent">#fec107</color>
+    <color name="white">#ffffff</color>
+    <color name="apptext_blackcolor">#282828</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="unselected">#bababa</color>
+    <color name="rippleColor">#bababa</color>
+    <color name="bg">#e9e9e9</color>
+	<color name="grey_e0e0e0">#E0E0E0</color>
+    <color name="black">#4F4F4F</color>
+    <color name="app_back_color">#F2F2F2</color>
+    <color name="app_back">#DDDDDD</color>
+    <color name="red">#cd2121</color>
+</resources>

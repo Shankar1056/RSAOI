@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bigappcompany.com.rsi.activity.About">
+
+    <android.support.v4.widget.NestedScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:fillViewport="true">
+
+        <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+            <FrameLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="0dp"
+                     android:layout_marginRight="0dp"
+                     android:layout_marginTop="0dp"
+                     app:cardBackgroundColor="@color/white"
+                     android:elevation="5dp"
+
+                     >
+
+                    <ImageView
+                        android:id="@+id/img_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:alpha="0.4"
+                        android:background="@drawable/gradient"
+                        android:scaleType="centerCrop" />
+                 </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/gradient" />
+
+                <android.support.v7.widget.CardView
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:layout_gravity="bottom|center_horizontal"
+                     android:layout_marginBottom="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                     android:layout_marginTop="150dp"
+                     app:cardBackgroundColor="@color/white"
+                     app:cardCornerRadius="0dp"
+                     app:cardElevation="5dp">
+
+                    <ImageView
+                         android:id="@+id/img"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_margin="5dp"
+                         android:background="@drawable/gradient"
+                         android:src="@drawable/rsinhji" />
+                 </android.support.v7.widget.CardView>
+             </FrameLayout>
+
+            <bigappcompany.com.rsi.widgets.MyCustomBoldTextView
+                 android:id="@+id/tv_org"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:text="RSI Bangalore"
+                 android:textColor="@color/secondary_text"
+                 android:textSize="@dimen/text_margin" />
+
+             <bigappcompany.com.rsi.widgets.MyCustomTextView
+                 android:id="@+id/tv_est"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center_horizontal"
+                 android:text="Established in 1961"
+                 android:textColor="@color/secondary_text" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="16dp"
+                 android:layout_marginRight="16dp"
+
+                 android:orientation="horizontal">
+
+                 <ImageView
+                     android:layout_width="24dp"
+                     android:layout_height="24dp"
+
+                     android:layout_gravity="center"
+                     android:tint="@color/secondary_text" />
+
+                 <bigappcompany.com.rsi.widgets.MyCustomTextView
+                     android:id="@+id/tv_address"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center"
+                     android:layout_margin="10dp"
+                     android:gravity="left"
+                     android:text="Rajendra Sinhji Army Officers Institute, 50, MG Road, Opp Cauvery Emporium Bangalore, 560001"
+                     android:textColor="@color/secondary_text"
+                     android:textSize="@dimen/text_small" />
+             </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/rippleColor"/>
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="16dp"
+                 android:layout_marginRight="16dp"
+
+                 android:orientation="horizontal">
+
+                <ImageView
+                     android:layout_width="24dp"
+                     android:layout_height="24dp"
+                     android:layout_gravity="center"
+                     android:src="@drawable/marker"
+                     android:tint="@color/secondary_text" />
+
+                <bigappcompany.com.rsi.widgets.MyCustomTextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    android:text="Rajendra Sinhji Army Officers Institute, 50, MG Road, Opp Cauvery Emporium Bangalore, 560001"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_small" />
+             </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/rippleColor"/>
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="16dp"
+                 android:layout_marginRight="16dp"
+                 android:layout_marginTop="10dp"
+                 android:orientation="horizontal">
+
+                <ImageView
+                     android:layout_width="24dp"
+                     android:layout_height="24dp"
+                     android:layout_gravity="center"
+                     android:src="@drawable/phone"
+                     android:tint="@color/secondary_text" />
+
+                <bigappcompany.com.rsi.widgets.MyCustomTextView
+                    android:id="@+id/tv_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    android:text="919124157 | 808021021"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_small" />
+             </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/rippleColor"/>
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="16dp"
+                 android:layout_marginRight="16dp"
+                 android:orientation="horizontal">
+
+                <ImageView
+                     android:layout_width="24dp"
+                     android:layout_height="24dp"
+                     android:layout_gravity="center"
+                     android:src="@drawable/email"
+                     android:tint="@color/secondary_text" />
+
+                <bigappcompany.com.rsi.widgets.MyCustomTextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="left"
+                    android:text="rsibangalore@yahoo.com"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="@color/secondary_text" />
+             </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/rippleColor"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_contacts"
+
+                ></android.support.v7.widget.RecyclerView>
+         </LinearLayout>
+     </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:id="@+id/bottombar"
+        android:layout_alignParentBottom="true"></FrameLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:text="Login with another number"
+        android:textSize="@dimen/text_large"
+        android:visibility="gone"
+        android:id="@+id/bt_ch"
+        />
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_facilities"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="bigappcompany.com.rsi.activity.FacilitiesActivity">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        >
+
+    <TableLayout
+        android:background="@color/bg"
+        android:divider="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableRow android:layout_weight="1">
+        <bigappcompany.com.rsi.activity.RippleView
+	        app:rv_rippleDuration="@integer/fast" android:id="@+id/rp_guest" android:background="@color/white" android:layout_marginBottom="1dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:src="@drawable/guests"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:layout_weight="1"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guests"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_Extra_large"/>
+
+        </bigappcompany.com.rsi.activity.RippleView>
+        <bigappcompany.com.rsi.activity.RippleView
+	        app:rv_rippleDuration="@integer/fast" android:id="@+id/rp_banquets" android:background="@color/white" android:layout_marginBottom="1dp" android:layout_marginLeft="1dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:src="@drawable/banquets"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:layout_weight="1"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banquets"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_Extra_large"/>
+
+        </bigappcompany.com.rsi.activity.RippleView>
+
+    </TableRow>
+        <!-- <TableRow android:layout_weight="1">
+
+         <bigappcompany.com.rsi.activity.RippleView android:visibility="invisible" app:rv_rippleDuration="@integer/fast" android:id="@+id/rp_bar" android:background="@color/white" android:layout_marginBottom="1dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical">
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:padding="20dp"
+                 android:layout_margin="10dp"
+                 android:orientation="vertical"
+
+                 android:src="@drawable/bar"
+                 ></ImageView>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Bar"
+                 android:layout_margin="10dp"
+                 android:layout_gravity="center"
+                 android:textColor="@color/colorPrimary"
+                 android:textSize="@dimen/text_Extra_large"/>
+         </bigappcompany.com.rsi.activity.RippleView>
+             <bigappcompany.com.rsi.activity.RippleView android:visibility="invisible" app:rv_rippleDuration="@integer/fast" android:id="@+id/rp_sports" android:background="@color/white" android:layout_marginLeft="1dp" android:layout_marginBottom="1dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical">
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:padding="20dp"
+                     android:orientation="vertical"
+                     android:layout_margin="10dp"
+                     android:src="@drawable/sports"></ImageView>
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Sports"
+                     android:layout_margin="10dp"
+                     android:layout_gravity="center"
+                     android:textColor="@color/colorPrimary"
+                     android:textSize="@dimen/text_Extra_large"/>
+
+             </bigappcompany.com.rsi.activity.RippleView>
+     </TableRow>
+         <TableRow>
+         <bigappcompany.com.rsi.activity.RippleView  app:rv_rippleDuration="@integer/fast" android:id="@+id/rp_rest" android:background="@color/white" android:layout_marginRight="1dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical">
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="150dp"
+         android:orientation="vertical"
+         android:src="@drawable/restaurent"
+         android:layout_margin="10dp"
+         android:layout_weight="1"
+         android:padding="20dp"
+         ></ImageView>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Restaurent"
+                 android:layout_margin="10dp"
+                 android:layout_gravity="center"
+                 android:textColor="@color/colorPrimary"
+                 android:textSize="@dimen/text_Extra_large"/>
+
+         </bigappcompany.com.rsi.activity.RippleView>
+     <ImageView
+         android:background="@color/white"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:layout_weight="1"
+         ></ImageView>
+
+     </TableRow>
+    -->
+
+    </TableLayout>
+       </android.support.v4.widget.NestedScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:id="@+id/bottombar"
+        android:layout_alignParentBottom="true"></FrameLayout>
+</LinearLayout>

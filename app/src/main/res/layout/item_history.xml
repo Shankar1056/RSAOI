@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="200dp"
+android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_horiz"/>
+<bigappcompany.com.rsi.widgets.MyCustomTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:text="CARIAPPA HALL"
+    android:id="@+id/tv_name"
+    android:layout_marginLeft="10dp"
+    android:textSize="@dimen/text_Extra_large"
+    android:textColor="@color/primary_text"/>
+<bigappcompany.com.rsi.widgets.MyCustomTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="6:30 pm"
+    android:id="@+id/tv_time"
+    android:layout_below="@+id/tv_name"
+    android:textSize="@dimen/text_small"
+    android:textColor="@color/colorPrimary"
+    android:layout_alignLeft="@+id/tv_name"
+    android:layout_alignRight="@+id/tv_name"
+    android:layout_marginTop="10dp"
+    android:gravity="center"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_toLeftOf="@+id/sprtr"
+    android:layout_toRightOf="@+id/tv_name"
+    android:id="@+id/linear"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+
+    >
+    <bigappcompany.com.rsi.widgets.SquareLFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img_type"
+            />
+    </bigappcompany.com.rsi.widgets.SquareLFrameLayout>
+    <bigappcompany.com.rsi.widgets.MyCustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banquets"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/txt_type"/>
+</LinearLayout>
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_toLeftOf="@+id/txt_date"
+    android:id="@+id/sprtr"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:src="@drawable/sprtr_vert"/>
+
+<bigappcompany.com.rsi.widgets.MyCustomBoldTextView
+    android:id="@+id/txt_date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:textSize="40sp"
+    android:textColor="@color/colorPrimary"
+    android:text="17"/>
+<bigappcompany.com.rsi.widgets.MyCustomTextView
+
+    android:layout_alignRight="@+id/txt_date"
+    android:layout_alignLeft="@+id/txt_date"
+    android:id="@+id/txt_month"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="@dimen/text_normal"
+    android:textColor="@color/secondary_text"
+    android:text="Jun"
+    android:layout_above="@+id/txt_date"
+    />
+<bigappcompany.com.rsi.widgets.MyCustomTextView
+
+    android:layout_alignRight="@+id/txt_date"
+    android:layout_alignLeft="@+id/txt_date"
+    android:id="@+id/txt_year"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="@dimen/text_normal"
+    android:textColor="@color/secondary_text"
+    android:layout_below="@+id/txt_date"
+    android:text="2016"/>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bigappcompany.com.rsi.activity.RippleView
+	app:rv_rippleDuration="@integer/fast"
+    android:id="@+id/rp_facility"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp"
+    android:layout_margin="1dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:minHeight="100dp"
+        android:orientation="vertical"
+        android:src="@drawable/guests"
+        android:layout_margin="10dp"
+        android:id="@+id/img_fac"
+        android:padding="20dp"
+        android:layout_weight="1"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guests"
+        android:id="@+id/tv_title"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_Extra_large"/>
+
+</bigappcompany.com.rsi.activity.RippleView>

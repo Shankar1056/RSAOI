@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="bigappcompany.com.rsi">
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".activity.MainActivity"
+			android:label="@string/home"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".activity.SplashActivity"
+			android:label="@string/app_name"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".activity.ScrollingActivity"
+			android:label="@string/title_activity_scrolling"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".activity.About"
+			android:label="@string/about"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"/>
+		<activity
+			android:name=".activity.FeedBack"
+			android:label="@string/feedback"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"/>
+		<activity
+			android:name=".activity.Contact"
+			android:label="@string/contact"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"/>
+		<activity
+			android:name=".activity.NewsActivity"
+			android:label="@string/news"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".activity.FacilitiesActivity"
+			android:label="@string/facilities"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"/>
+		<activity
+			android:name=".activity.BookingActivity"
+			android:label="@string/facilities"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"/>
+		<activity
+			android:name=".activity.FacilitiesSubList"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".activity.PhotosActivity"
+			android:label="@string/photos"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".activity.LoginActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".activity.BookingHistoryActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"/>
+		<activity
+			android:name=".activity.BookingHDActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"/>
+		<activity
+			android:name=".activity.ImageSlide"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".activity.PayBill"
+			android:screenOrientation="portrait"
+			android:label="@string/paybill"
+			android:theme="@style/AppTheme_new"/>
+		<activity
+			android:name=".activity.PaymentPage"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme_new"/>
+		<activity
+			android:name=".activity.PaymentWebView"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme_new"/>
+
+		<meta-data
+			xmlns:tools="http://schemas.android.com/tools"
+			android:name="io.fabric.ApiKey"
+			android:value="eed77d7fd5ee7f4526f3de323187c2e7c9c51180"
+			tools:replace="android:value"/>
+		<meta-data
+			android:name="com.digits.sdk.android.ConsumerKey"
+			android:value="QOlRzNIvZGvCPoUlTePnwumXP"/>
+		<meta-data
+			android:name="com.digits.sdk.android.ConsumerSecret"
+			android:value="b26ZiCaJ1RrJrSHGUiqcRk5uqRWr26kVpjbDSsyoMLOmEIhU3t"/>
+
+
+		<service android:name=".activity.MyFirebaseInstanceIDService">
+			<intent-filter>
+				<action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+			</intent-filter>
+		</service>
+		<service android:name=".activity.MyFirebaseMessagingService">
+			<intent-filter>
+				<action android:name="com.google.firebase.MESSAGING_EVENT"/>
+			</intent-filter>
+		</service>
+
+		<activity android:name=".activity.PaymentActivity"/>
+		<activity
+			android:name=".activity.NewsLetter"
+			android:label="Newsletter">
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".activity.MainActivity"/>
+		</activity>
+		<activity
+			android:name=".activity.NotificationActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/notifications"
+			android:theme="@style/AppTheme"/>
+	</application>
+
+</manifest>

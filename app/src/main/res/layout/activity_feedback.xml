@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="bigappcompany.com.rsi.activity.FeedBack">
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/margin_15"
+		android:id="@+id/cardView">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:padding="10dp">
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+		<EditText
+			android:id="@+id/ed_feedback"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/hint_feedback"
+			android:text=""
+			android:background="@android:color/transparent"
+			/>
+				</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+	</android.support.v7.widget.CardView>
+
+	<Button
+		android:id="@+id/sendfeedback"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/height_50"
+		android:text="@string/sendfeedback"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:textColor="@color/white"
+		android:background="@color/colorAccent"/>
+
+	<FrameLayout
+		android:id="@+id/bottombar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:visibility="gone"
+		android:minHeight="60dp"></FrameLayout>
+</RelativeLayout>

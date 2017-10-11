@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/building"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height"
+            android:background="@drawable/gradient_primary"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="bigappcompany.com.rsi.activity.ScrollingActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:transitionName="@string/transition_image"
+                />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="5dp"
+            android:id="@+id/card_content"
+            app:cardBackgroundColor="@color/white">
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:id="@+id/img_photo"
+                    android:background="@drawable/gradient"
+                    android:scaleType="centerCrop" />
+                <bigappcompany.com.rsi.widgets.MyCustomBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/text_large"
+                    android:id="@+id/title_tv"
+                    android:textColor="@color/primary_text"
+                    android:text="Title"/>
+                <bigappcompany.com.rsi.widgets.MyCustomBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="@dimen/text_large"
+                    android:id="@+id/date_tv"
+                    android:textColor="@color/secondary_text"
+                    android:text="Date"/>
+                <bigappcompany.com.rsi.widgets.MyCustomTextView
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/text_small"
+                    android:id="@+id/des_tv"
+                    android:paddingBottom="36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_margin="16dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/back"
+                android:clickable="true"
+                android:src="@drawable/back"/>
+            <bigappcompany.com.rsi.widgets.MyCustomBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_large"
+                android:text="News"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+<FrameLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:minHeight="60dp"
+android:id="@+id/bottombar"
+android:layout_gravity="bottom"
+    ></FrameLayout>
+</LinearLayout>

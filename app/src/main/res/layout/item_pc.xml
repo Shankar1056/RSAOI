@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+
+    >
+
+
+    <bigappcompany.com.rsi.widgets.MyCustomTextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/text_small"
+        android:id="@+id/tv_slot"
+        android:layout_gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/tv_price"
+        android:textColor="@color/secondary_text"/>
+    <TextView
+        android:layout_alignLeft="@+id/tv_slot"
+        android:layout_alignRight="@+id/tv_slot"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/secondary_text"
+        android:layout_below="@+id/tv_slot"/>
+    <bigappcompany.com.rsi.widgets.MyCustomTextView
+        android:id="@+id/tv_price"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_slot"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/text_small"
+        android:textColor="@color/secondary_text"
+        />
+    <TextView
+        android:layout_alignLeft="@+id/tv_price"
+        android:layout_alignRight="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/secondary_text"
+        android:layout_below="@+id/tv_price"/>
+</RelativeLayout>
